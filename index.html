@@ -10,65 +10,69 @@
 	</head>
 	<body>
 		<header>
-			<div class="header-nav-section">
-				<div class="header-logo">
-					<img src="images/logo.svg" alt="logo">
-				</div>
-				<nav>
-					<div class="header-nav-links">
-						<ul class="nav-links">
-							<li>
-								<a href="#">Products</a>
-								<ul class="nav-links-fall-down">
-									<li><a href="#">Overview</a></li>
-									<li><a href="#">Pricing</a></li>
-									<li><a href="#">Marketplace</a></li>
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Integrations</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Company</a>
-								<ul class="nav-links-fall-down">
-									<li><a href="#">About</a></li>
-									<li><a href="#">Team</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Careers</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Contact</a>
-								<ul class="nav-links-fall-down">
-									<li><a href="#">Contact</a></li>
-									<li><a href="#">Newsletter</a></li>
-									<li><a href="#">LinkedIn</a></li>
-								</ul>
-							</li>
-							
-							
-						</ul>
+			<div class="header-container">
+				<div class="header-nav-container">
+					<div class="header-logo logo">
+						<img src="images/logo.svg" alt="logo">
 					</div>
+					<nav>
+						<!-- <div class="header-nav-links"> -->
+							<ul class="nav-links">
+								<li>
+									<a href="#">Products</a>
+									<ul class="nav-links-fall-down">
+										<li><a href="#">Overview</a></li>
+										<li><a href="#">Pricing</a></li>
+										<li><a href="#">Marketplace</a></li>
+										<li><a href="#">Features</a></li>
+										<li><a href="#">Integrations</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Company</a>
+									<ul class="nav-links-fall-down">
+										<li><a href="#">About</a></li>
+										<li><a href="#">Team</a></li>
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">Careers</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+									<ul class="nav-links-fall-down">
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">Newsletter</a></li>
+										<li><a href="#">LinkedIn</a></li>
+									</ul>
+								</li>
+								
+								
+							</ul>
+						<!-- </div> -->
+					</nav>
 					<div class="header-nav-login-btns">
 						<a href="#" class="header-nav-btn btn">Login</a>
 						<a href="#" class="header-nav-btn btn">Sign Up</a>
 					</div>
-				</nav>
+				</div>
+
+				<h1>A modern publishing platform</h1>
+				<p class="header-subtitle">Grow your audience and build your online brand</p>
+				<div class="header-cta-btns">
+					<a href="" class="header-cta-btn btn">Start for Free</a>
+					<a href="" class="header-cta-btn btn">Learn More</a>
+				</div>	
 			</div>
-
-			<h1>A modern publishing platform</h1>
-			<p class="header-subtitle">Grow your audience and build your online brand</p>
-			<div class="header-cta-btns">
-				<a href="" class="header-cta-btn btn">Start for Free</a>
-				<a href="" class="header-cta-btn btn">Learn More</a>
-			</div>	
-
 		</header>
 
 		<main>
 			<section>
 				<h2>Designed for the future</h2>
 				<div class="section-container">
-					<img src="images/illustration-editor-desktop.svg" alt="graphic ilustration of display" class="section-graphics monitor-graph">
+					<picture class="section-graphics monitor-graph">
+						<source srcset="images/illustration-editor-desktop.svg" media="(min-width: 800px)"/>
+						<img src="images/illustration-editor-mobile.svg" alt="graphic ilustration of display">
+					</picture>
 					<article>
 						<div class="article-item">
 							<h3>Introducing an extensible editor</h3>
@@ -94,7 +98,10 @@
 				</article>
 			</section>
 			<section>
-				<img src="images/illustration-laptop-desktop.svg" alt="laptop" class="section-graphics laptop-graph">
+				<picture class="section-graphics laptop-graph">
+					<source srcset="images/illustration-laptop-desktop.svg" media="(min-width: 800px)"/>
+					<img src="images/illustration-laptop-mobile.svg" alt="graphic ilustration of display">
+				</picture>
 				<article>
 					<div class="article-item">
 						<h3>Free, open, simple</h3>
@@ -110,37 +117,48 @@
 				</article>
 			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-logo logo">
+					<img src="images/logo.svg" alt="logo">
+				</div>
+				<div class="footer-links">
 
+					<div class="footer-links-block">
+						<h5>Products</h5>
+						<ul class="footer-links-list">
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Marketplace</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Integrations</a></li>
+						</ul>
+					</div>
 
-	Powerful tooling
-	Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-	capable of producing even the most complicated sites.
+					<div class="footer-links-block">
+						<h5>Company</h5>
+						<ul class="footer-links-list">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+					</div>
 
-	Product
-
-	Overview
-	Pricing
-	Marketplace
-	Features
-	Integrations
-
-	Company
-
-	About
-	Team
-	Blog
-	Careers
-
-	Connect
-	
-	Contact
-	Newsletter
-	LinkedIn
-
-	<div class="attribution">
-		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-		Coded by <a href="#">Your Name Here</a>.
-	</div>
+					<div class="footer-links-block">
+						<h5>Contact</h5>
+						<ul class="footer-links-list">
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Newsletter</a></li>
+							<li><a href="#">LinkedIn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+				Coded by <a href="#">Your Name Here</a>.
+			</div>
+		</footer>
 	</body>
-	</html>
+</html>

@@ -1,5 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h5,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
-  background-color: yellow;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4b5862;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+nav a {
+  color: #ffffff;
+  font-family: "Overpass", sans-serif;
+}
+
+header {
+  background: linear-gradient(90deg, #eb6f5c 58%, #ff525d 100%);
+  border-bottom-left-radius: 45px;
+  padding: 2em 0 5em;
+}
+header .header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url(../../images/bg-pattern-intro.svg);
+}
+header .header-container .header-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-container .header-nav-container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-container .header-nav-container nav ul li {
+  margin-right: 5em;
+}
+header .header-container .header-nav-container nav ul .nav-links-fall-down {
+  display: none;
 }
 
 .attribution {

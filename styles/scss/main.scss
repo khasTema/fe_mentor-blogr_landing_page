@@ -1,15 +1,101 @@
-body{
-    background-color: yellow;
+// -----technical--and--temp-setings----
+*{
+    box-sizing: border-box;
 }
 
-// ---------fonts--------------
+body,
+h1,
+h2,
+h3,
+h5,
+ul,
+li,
+p{
+    margin: 0;
+    padding: 0;
+}
 
-// font-family: 'Overpass', sans-serif;
-// font-family: 'Ubuntu', sans-serif;
+ul{
+    list-style: none;
+}
 
-// ------------------------------
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
 
 
+
+// -----variables------
+// ****fonts*****
+$bodyFont: 'Ubuntu', sans-serif;
+$headingFont: 'Overpass', sans-serif;
+// *******colors******
+$CTA_text: #ff525d;
+$CTA_hover_background: #ff7a85;
+$headings: #1f3f5b;
+$White_text: #ffffff;
+$footer_text: #c8c8cb;
+$body_copy: #4b5862;
+$footer_background: #25252d;
+
+
+// --------TYPOGRAPHY------
+body{
+    font-family: $bodyFont;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $body_copy;
+}
+
+h1{
+    color: $White_text;
+    font-size: 3rem;
+    font-family: $headingFont;
+    font-weight: 400;
+}
+
+nav a{
+    color: $White_text;
+    font-family: $headingFont;
+}
+
+// ---------------LAYOUT--------
+
+// ___header_____
+
+header{
+    background: linear-gradient(90deg, #eb6f5c 58%, #ff525d 100%);
+    // background-image: url(../../images/bg-pattern-intro.svg);
+    // background-position: center;
+    border-bottom-left-radius: 45px;
+    padding: 2em 0 5em;
+    .header-container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-image: url(../../images/bg-pattern-intro.svg);
+        .header-nav-container{
+            display: flex;
+            justify-content: space-between;
+            nav ul{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    margin-right: 5em;
+                }
+                .nav-links-fall-down{
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+}
 
 
 
