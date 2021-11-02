@@ -141,6 +141,9 @@ header .header-cta-btns .btn-transparent {
 }
 
 main .section-top-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 4em 0 14em;
   background-image: url(../../images/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
@@ -189,6 +192,9 @@ main .section-middle-container .section-middle-inner-container .phone-graph {
   margin-bottom: -6.5em;
 }
 main .section-bottom-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: url(../../images/illustration-laptop-desktop.svg);
   background-repeat: no-repeat;
   background-position-x: -278px;

@@ -114,7 +114,6 @@ p{
 
 // ---------------LAYOUT--------
 
-// ___header_____
 header{
     background-color: $CTA_text;
     background-image: url(../../images/bg-pattern-intro.svg), linear-gradient(to right,#eb715a, #e6305a);
@@ -134,11 +133,8 @@ header{
         justify-content: space-between;
         align-items: center;
         .header-nav-container{
-
-            // border: 1px dashed green;
-
             width: 100%;
-            // max-width: 1000px;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -169,14 +165,16 @@ header{
         .btn-transparent{
             border: 1px solid $White_text;
         }
-    }
-    
+    } 
 }
+
 
 
 main{ 
     .section-top-container{
-        // background-color: yellow;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
         padding: 4em 0 14em;
         background-image: url(../../images/illustration-editor-desktop.svg);
         background-repeat: no-repeat;
@@ -225,6 +223,9 @@ main{
         }
     }
     .section-bottom-container{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
         background-image: url(../../images/illustration-laptop-desktop.svg);
         background-repeat: no-repeat;
         background-position-x: -278px;
