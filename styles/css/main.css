@@ -158,6 +158,30 @@ main .section-top-container .section-inner-container .section-graphics {
   width: 50%;
   visibility: hidden;
 }
+main .section-middle-container {
+  background-color: #232335;
+  background-image: url(../../images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position-x: -192px;
+  background-position-y: -492px;
+  color: #ffffff;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+main .section-middle-container .section-middle-inner-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section-middle-container .section-middle-inner-container .phone-graph {
+  margin-top: -5em;
+  margin-left: -4em;
+  margin-right: 4em;
+  margin-bottom: -6.5em;
+}
 
 .attribution {
   font-size: 11px;
