@@ -1,3 +1,333 @@
-body{
-    background-color: khaki;
+*{
+    box-sizing: border-box;
 }
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+/* =====================
+====TYPOGRAPHY======
+===================== */
+
+h1,
+h2,
+h3,
+h4{
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+.subtitle,
+.login,
+.sign-up,
+.nav-main-links{
+    font-family: 'Overpass', sans-serif;
+}
+
+h1{
+    font-size: 2.325rem;
+    margin-bottom: 0.3em;
+}
+
+h1,
+.subtitle{
+    color: #ffffff;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+.subtitle{
+    font-weight: 300; 
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+}
+
+.login,
+.sign-up,
+.nav-main-links{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.fall-down-item{
+    text-decoration: none;
+    color: #1f3f5b;
+    font-size: 1.1rem;
+    letter-spacing: 0.003em;
+}
+
+
+/* ============================
+=========HEADER=============
+============================ */
+
+header{
+    background-image: url(../images/bg-pattern-intro.svg) ;
+    /* background-color: linear-gradient(to left, #ff525d, #ff7a85); */
+    background-color: #ff525d;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350%;
+    background-position-x: -387px;
+    background-position-y: -322px;
+    padding-top: 3.3em;
+    padding-bottom: 6em;
+    border-bottom-left-radius: 100px;
+}
+
+.header-container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-top-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.header-nav{
+    width: 100%;
+    padding: 1.6em 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    box-shadow: 6px 3px 20px 2px rgba(0,0,0,0.5);
+    display: none;
+}
+
+.header-nav-links{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #e5e5e5;
+    margin-bottom: 2em;
+
+}
+
+.arrow{
+    width: 15px;
+    height: 7px;
+    display: inline-block;
+    background-image: url(../images/icon-arrow-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-main-links{
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    color: #1f3f5b;
+}
+
+.header-nav-login-btns{
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-nav-login-btns .login{
+    color: #1f3f5b;
+}
+
+.nav-fall-down-links{
+    width: 95%;
+    padding: 1em 0;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    margin: 0 auto 1em;
+    text-align: center;
+    display: none;
+    /* transition: 10s; */
+    
+}
+
+.nav-main-links:hover + .nav-fall-down-links,
+.nav-main-links:focus + .nav-fall-down-links{
+    display: block;
+}
+
+.nav-fall-down-links:hover,
+.nav-fall-down-links:focus{
+    display: block;
+}
+
+.nav-fall-down-links li{
+    padding-bottom: 1em;
+}
+
+
+.header-logo{
+   
+    width: 25%;
+}
+
+.close-nav{
+    display: none;
+}
+
+.call-to-action-btns{
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    display: inline-block;
+    border: 2px solid #ffffff;
+    padding: 0.7em 1.5em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ff525d;
+    background-color: #ffffff;
+}
+
+.btn-inverse{
+    color: #ffffff;
+    background: #ff525d;
+}
+
+@media (min-width: 850px){
+    header{
+        background-size: 200%;
+        background-position-x: -324px;
+        background-position-y: -573px;
+    }
+    .header-logo{
+        width: 18%;
+    }
+    .header-nav-call{
+        display: none;
+    }
+    .header-nav{
+        /* border: 1px dashed black; */
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding: 0;
+        background: none;
+        position: inherit;
+        top: 0;
+        box-shadow: none;  
+    }
+    .header-nav-links{
+        width: 50%;
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: none;
+        margin-bottom: 0;
+    
+    }
+    .nav-main-links{
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        margin-bottom: 0;
+        margin-right: 1em;
+        color: #ffffff;
+    }
+    .arrow{
+        width: 15px;
+        height: 7px;
+        display: inline-block;
+        background-image: url(../images/icon-arrow-light.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .header-nav-login-btns{
+        width: 250px;
+        margin: 0 ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .header-nav-login-btns .login{
+        color: #ffffff;
+        background: none;
+        border: none;
+    }
+    .header-nav-login-btns .sign-up{
+        background-color: #ffffff;
+        color: #ff525d;
+        padding-bottom: 0.3em;
+        padding-top: 0.3em;
+    }
+    .nav-fall-down-links{
+        position: absolute;
+        top: 50px;
+        width: 200px;
+        padding: 0.5em ;
+        background-color: #fff;
+        border-radius: none;
+        margin: 0;
+        text-align: left;
+        display: none; 
+    }
+    .nav-fall-down-links.product{
+        left: 10px;
+    }
+    .nav-fall-down-links.company{
+        left: 120px;
+    }
+    .nav-fall-down-links.contact{
+        left: 240px;
+    }
+
+
+}
+
+@media (min-width: 1400px){
+    header{
+        background-size: 150%;
+        background-position-x: -294px;
+        background-position-y: -875px;
+    }
+}
+
