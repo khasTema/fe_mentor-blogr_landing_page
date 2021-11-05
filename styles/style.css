@@ -359,6 +359,9 @@ header{
 
 .section-inner-container{
     padding-top: 6em;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 
     /* border: 1px dashed fuchsia; */
 
@@ -436,14 +439,23 @@ header{
 
 @media (min-width: 1440px){
     .inner-container-desktop{
-        background-position-x: 100%;
+        padding:  12em 0;
+        background-size: 55%;
+        background-position-x: 136%;
+        background-position-y: 87px;
       
     }
     .inner-container-laptop{
-        background-position-x: 0%;
+        padding:  12em 0;
+        background-size: 56%;
+        background-position-x: -36%;
+        background-position-y: 10px;
     }
 
 }
+
+/* ----middle---section---- */
+
 
 
 
