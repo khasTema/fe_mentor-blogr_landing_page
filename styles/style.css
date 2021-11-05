@@ -61,6 +61,27 @@ h1,
     text-align: center;
 }
 
+h2,
+h3{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f3f5b;
+}
+
+h2{
+    margin-bottom: 1.5em;
+}
+
+h3{
+    margin-bottom: 0.7em;
+}
+
+P{
+    color: #7c7c7c;
+    margin-bottom: 3.5em;
+}
+
 img{
     width: 100%;
 }
@@ -330,6 +351,102 @@ header{
         background-position-y: -875px;
     }
 }
+
+
+/* ==============================
+=======MAIN==================
+============================= */
+
+.section-inner-container{
+    padding-top: 6em;
+
+    /* border: 1px dashed fuchsia; */
+
+}
+
+.section-inner-container-article{
+    /* background-color: goldenrod; */
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-text{
+    text-align: center;
+}
+
+@media (min-width: 850px){
+    h2{
+       font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.4rem;
+        text-align: left;
+    }
+    .section-inner-container-article{
+        flex-direction: row;
+    }
+
+    .article-row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .article-text{
+        text-align: left;
+        width: 50%;
+    }
+    .article-illustration{
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .article-illustration{
+        visibility: hidden;
+    }
+
+
+    .inner-container-desktop{
+
+        background-image: url(../images/illustration-editor-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 165%;
+        /* background-position-x: 165em; */
+        background-position-y: center;
+
+    }
+
+    .inner-container-laptop{
+        background-image: url(../images/illustration-laptop-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: -58%;
+        background-position-y: center;
+
+    }
+
+}
+
+@media (min-width: 1440px){
+    .inner-container-desktop{
+        background-position-x: 100%;
+      
+    }
+    .inner-container-laptop{
+        background-position-x: 0%;
+    }
+
+}
+
+
+
 
 
 
